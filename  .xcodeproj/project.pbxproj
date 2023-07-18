@@ -17,6 +17,9 @@
 		5784A8142A5C324D00E8B0F6 /* WeLoveMarathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8132A5C324D00E8B0F6 /* WeLoveMarathonUITests.swift */; };
 		5784A8162A5C324D00E8B0F6 /* WeLoveMarathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8152A5C324D00E8B0F6 /* WeLoveMarathonUITestsLaunchTests.swift */; };
 		5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8242A5C344D00E8B0F6 /* SplashScreenView.swift */; };
+		578854962A666950002F51F7 /* WLMTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578854952A666950002F51F7 /* WLMTabView.swift */; };
+		578854982A66714F002F51F7 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578854972A66714F002F51F7 /* HomeUIView.swift */; };
+		5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788549A2A6678CF002F51F7 /* RoundCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		5784A8132A5C324D00E8B0F6 /* WeLoveMarathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveMarathonUITests.swift; sourceTree = "<group>"; };
 		5784A8152A5C324D00E8B0F6 /* WeLoveMarathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveMarathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5784A8242A5C344D00E8B0F6 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		578854952A666950002F51F7 /* WLMTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLMTabView.swift; sourceTree = "<group>"; };
+		578854972A66714F002F51F7 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
+		5788549A2A6678CF002F51F7 /* RoundCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +106,10 @@
 		5784A7F22A5C324C00E8B0F6 /* WeLoveMarathon */ = {
 			isa = PBXGroup;
 			children = (
+				578854942A666832002F51F7 /* home */,
 				5784A8232A5C343200E8B0F6 /* splash */,
 				5784A8222A5C341600E8B0F6 /* common */,
 				5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */,
-				5784A7F52A5C324C00E8B0F6 /* ContentView.swift */,
 				5784A7F72A5C324D00E8B0F6 /* Assets.xcassets */,
 				5784A7FC2A5C324D00E8B0F6 /* Persistence.swift */,
 				5784A7FE2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld */,
@@ -140,6 +146,9 @@
 		5784A8222A5C341600E8B0F6 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				578854992A6678B7002F51F7 /* views */,
+				5784A7F52A5C324C00E8B0F6 /* ContentView.swift */,
+				578854952A666950002F51F7 /* WLMTabView.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -150,6 +159,22 @@
 				5784A8242A5C344D00E8B0F6 /* SplashScreenView.swift */,
 			);
 			path = splash;
+			sourceTree = "<group>";
+		};
+		578854942A666832002F51F7 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				578854972A66714F002F51F7 /* HomeUIView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		578854992A6678B7002F51F7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5788549A2A6678CF002F51F7 /* RoundCornerView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5784A7FD2A5C324D00E8B0F6 /* Persistence.swift in Sources */,
+				578854982A66714F002F51F7 /* HomeUIView.swift in Sources */,
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,
+				5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */,
+				578854962A666950002F51F7 /* WLMTabView.swift in Sources */,
 				5784A7F42A5C324C00E8B0F6 /* WeLoveMarathonApp.swift in Sources */,
 				5784A8002A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld in Sources */,
 			);
