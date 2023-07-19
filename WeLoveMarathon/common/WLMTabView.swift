@@ -20,44 +20,42 @@ struct WLMTabView: View {
     private var fillImage: String {
         selectedTab.rawValue + ".fill"
     }
-
+    
     
     var body: some View {
-        VStack {
-            HStack {
-                ForEach(Tab.allCases, id: \.rawValue) { tab in
+        HStack(spacing:20) {
+            ForEach(Tab.allCases, id: \.rawValue) { tab in
+                let color = tab == selectedTab ?Color("Secondary"): Color("Primary")
+                VStack{
                     Spacer()
-                    VStack{
-                        Spacer()
-                        Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
-                            .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
-                            .foregroundColor(tab == selectedTab ?
-                                             Color("Secondary"): Color("Primary"))
-                            .frame(width: 40, height: 40)
-                            .font(.system(size: 20))
-                            .onTapGesture {
-                                withAnimation(.easeInOut(duration: 0.1)) {
-                                    selectedTab = tab
-                                }
+                    Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
+                        .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
+                        .foregroundColor(Color.white)
+                        .frame(width: 40, height: 40)
+                        .font(.system(size: 20))
+                        .onTapGesture {
+                            withAnimation(.easeInOut(duration: 0.1)) {
+                                selectedTab = tab
                             }
-                        Text("\(tab.rawValue.capitalized)")
-                            .foregroundColor(tab == selectedTab ?Color("Secondary"):Color("Primary"))
-                        Spacer()
-                    }
-            
-                
+                        }
+                        .background( Circle().foregroundColor(color))
+                    Text("\(tab.rawValue.capitalized)")
+                        .foregroundColor(color)
+                        .font(.system(size: 16))
+                    Spacer()
                 }
             }
-            .frame(width: nil, height: 80)
-            .background(.white)
-            .edgesIgnoringSafeArea(.bottom)
-            .clipShape(
-                        RoundCornerView(
-                            cornerRadius: 20,
-                            maskedCorners: [.topLeft, .topRight]
-                        )
-                    )
         }
+        .frame(width: nil, height: 100)
+        .frame(maxWidth: .infinity)
+        .background(.white)
+        .edgesIgnoringSafeArea(.bottom)
+        .clipShape(
+            RoundCornerView(
+                cornerRadius: 20,
+                maskedCorners: [.topLeft, .topRight]
+            )
+        )
     }
 }
 

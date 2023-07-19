@@ -9,10 +9,26 @@ import SwiftUI
 
 struct HomeUIView: View {
     var body: some View {
-        VStack{
-            Text("Hello, from home!")
-        } .frame(maxWidth: .infinity, maxHeight: .infinity).background(Color("Primary"))
-        
+        NavigationStack {
+            ScrollView {
+                Grid {
+                    GridRow {
+                        ActivityUIView(model : Activity.activity.getActivityDataModel()).padding(5)
+                        ActivityUIView(model : Activity.beaches.getActivityDataModel()).padding(5)
+                    }
+                    GridRow {
+                        ActivityUIView(model : Activity.culture.getActivityDataModel()).padding(5)
+                        ActivityUIView(model : Activity.shopping.getActivityDataModel()).padding(5)
+                    }
+                    GridRow {
+                        ActivityUIView(model : Activity.foodDrink.getActivityDataModel()).padding(5)
+                        ActivityUIView(model : Activity.wine.getActivityDataModel()).padding(5)
+                    }
+                }.padding()
+                
+            }.background(Color("Primary"))
+                .navigationTitle("We Love MArathon")
+        }
     }
 }
 
