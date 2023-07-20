@@ -13,6 +13,16 @@ enum Tab: String, CaseIterable {
     case person
     case leaf
     case gearshape
+    
+    func getName() -> String {
+        switch self {
+        case .house: return  "Home"
+        case .message: return  "Tips"
+        case .person: return  "Like"
+        case .leaf: return  "Run"
+        case .gearshape: return  "About"
+        }
+    }
 }
 
 struct WLMTabView: View {
@@ -23,7 +33,7 @@ struct WLMTabView: View {
     
     
     var body: some View {
-        HStack(spacing:20) {
+        HStack(spacing:30) {
             ForEach(Tab.allCases, id: \.rawValue) { tab in
                 let color = tab == selectedTab ?Color("Secondary"): Color("Primary")
                 VStack{
@@ -39,7 +49,7 @@ struct WLMTabView: View {
                             }
                         }
                         .background( Circle().foregroundColor(color))
-                    Text("\(tab.rawValue.capitalized)")
+                    Text(tab.getName())
                         .foregroundColor(color)
                         .font(.system(size: 16))
                     Spacer()

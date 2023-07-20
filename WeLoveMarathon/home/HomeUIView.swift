@@ -13,7 +13,10 @@ struct HomeUIView: View {
             ScrollView {
                 Grid {
                     GridRow {
-                        ActivityUIView(model : Activity.activity.getActivityDataModel()).padding(5)
+                        NavigationLink(destination:ShoppingUIView()) {
+                            ActivityUIView(model : Activity.activity.getActivityDataModel()).padding(5)
+                        }
+                        
                         ActivityUIView(model : Activity.beaches.getActivityDataModel()).padding(5)
                     }
                     GridRow {
@@ -28,6 +31,16 @@ struct HomeUIView: View {
                 
             }.background(Color("Primary"))
                 .navigationTitle("We Love MArathon")
+        }
+        .navigationDestination(for: Activity.self) { activity in
+            switch activity {
+            case .activity:ShoppingUIView()
+            case .beaches:ShoppingUIView()
+            case .culture:ShoppingUIView()
+            case .shopping:ShoppingUIView()
+            case .foodDrink:ShoppingUIView()
+            case .wine:ShoppingUIView()
+            }
         }
     }
 }

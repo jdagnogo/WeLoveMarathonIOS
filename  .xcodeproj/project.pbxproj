@@ -22,6 +22,7 @@
 		5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788549A2A6678CF002F51F7 /* RoundCornerView.swift */; };
 		57B088C62A67B61700404861 /* ActivityUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B088C52A67B61700404861 /* ActivityUIView.swift */; };
 		57B088C82A67BA8B00404861 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B088C72A67BA8B00404861 /* Activity.swift */; };
+		57CCFF0D2A690ADE00834899 /* ShoppingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCFF0C2A690ADE00834899 /* ShoppingUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		5788549A2A6678CF002F51F7 /* RoundCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerView.swift; sourceTree = "<group>"; };
 		57B088C52A67B61700404861 /* ActivityUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityUIView.swift; sourceTree = "<group>"; };
 		57B088C72A67BA8B00404861 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		57CCFF0C2A690ADE00834899 /* ShoppingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		5784A7F22A5C324C00E8B0F6 /* WeLoveMarathon */ = {
 			isa = PBXGroup;
 			children = (
+				57CCFF0B2A6909B800834899 /* shopping */,
 				578854942A666832002F51F7 /* home */,
 				5784A8232A5C343200E8B0F6 /* splash */,
 				5784A8222A5C341600E8B0F6 /* common */,
@@ -181,6 +184,14 @@
 				57B088C52A67B61700404861 /* ActivityUIView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		57CCFF0B2A6909B800834899 /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+				57CCFF0C2A690ADE00834899 /* ShoppingUIView.swift */,
+			);
+			path = shopping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,
 				57B088C62A67B61700404861 /* ActivityUIView.swift in Sources */,
+				57CCFF0D2A690ADE00834899 /* ShoppingUIView.swift in Sources */,
 				5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */,
 				578854962A666950002F51F7 /* WLMTabView.swift in Sources */,
 				5784A7F42A5C324C00E8B0F6 /* WeLoveMarathonApp.swift in Sources */,
