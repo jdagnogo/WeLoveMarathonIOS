@@ -20,6 +20,10 @@ struct ContentView: View {
                     HomeUIView()
                         .tabItem {Label("house", systemImage: "house")}
                         .tag(Tab.house)
+                    
+                    TipsUIView()
+                        .tabItem {Label("tips", systemImage: "house")}
+                        .tag(Tab.message)
                 }
                 WLMTabView(selectedTab: $tabSelected)
             }.background(Color("Primary"))

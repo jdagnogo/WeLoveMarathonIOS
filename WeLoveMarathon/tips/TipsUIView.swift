@@ -1,5 +1,5 @@
 //
-//  ShoppingUIView.swift
+//  TipsUIView.swift
 //  WeLoveMarathon
 //
 //  Created by Jean francois dagnogo on 20/07/2023.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ShoppingUIView: View {
+struct TipsUIView: View {
     var body: some View {
-        Text("Hello, ShoppingUIView")
+        Text("Hello, TipsUIView!")
     }
 }
 
-struct ShoppingUIView_Previews: PreviewProvider {
+struct TipsUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoppingUIView()
+        TipsUIView()
     }
 }

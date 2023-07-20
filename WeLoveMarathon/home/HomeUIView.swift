@@ -11,30 +11,29 @@ struct HomeUIView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Grid {
-                    GridRow {
-                        NavigationLink(destination:ShoppingUIView()) {
-                            ActivityUIView(model : Activity.activity.getActivityDataModel()).padding(5)
-                        }
-                        
-                        ActivityUIView(model : Activity.beaches.getActivityDataModel()).padding(5)
+                ScrollView(.vertical) {
+                    ScrollView(.vertical) {
+                        let columns = Array(repeating: GridItem(.flexible(minimum: 100), spacing: 20), count: 2)
+                        LazyVGrid(
+                            columns: columns,
+                            alignment: .center,
+                            spacing: 16
+                        ) {
+                            ForEach(Activity.allCases, id: \.self) { item in
+                                NavigationLink(
+                                    destination: ShoppingUIView() // MARK: fix this
+                                ) {
+                                    ActivityUIView(model : item.getActivityDataModel())
+                                }
+                            }
+                        }.padding()
                     }
-                    GridRow {
-                        ActivityUIView(model : Activity.culture.getActivityDataModel()).padding(5)
-                        ActivityUIView(model : Activity.shopping.getActivityDataModel()).padding(5)
-                    }
-                    GridRow {
-                        ActivityUIView(model : Activity.foodDrink.getActivityDataModel()).padding(5)
-                        ActivityUIView(model : Activity.wine.getActivityDataModel()).padding(5)
-                    }
-                }.padding()
-                
-            }.background(Color("Primary"))
-                .navigationTitle("We Love MArathon")
+                }
+            }.background(Color("Primary")).navigationTitle("We Love MArathon")
         }
         .navigationDestination(for: Activity.self) { activity in
             switch activity {
-            case .activity:ShoppingUIView()
+            case .activity:ActivitiesUIView()
             case .beaches:ShoppingUIView()
             case .culture:ShoppingUIView()
             case .shopping:ShoppingUIView()

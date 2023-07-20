@@ -21,15 +21,15 @@ enum Activity: String, CaseIterable {
         case .activity:
             return ActivityDataModel(color: Color.green, name: "Activities", iconPath: "logo")
         case .beaches:
-            return ActivityDataModel(color: Color.orange, name: "Activities", iconPath: "logo")
+            return ActivityDataModel(color: Color.orange, name: "Beaches", iconPath: "logo")
         case .culture:
-            return ActivityDataModel(color: Color.blue, name: "Activities", iconPath: "logo")
+            return ActivityDataModel(color: Color.blue, name: "Culture", iconPath: "logo")
         case .shopping:
-            return ActivityDataModel(color: Color.purple, name: "Activities", iconPath: "logo")
+            return ActivityDataModel(color: Color.purple, name: "Shopping", iconPath: "logo")
         case .foodDrink:
-            return ActivityDataModel(color: Color.yellow, name: "Activities", iconPath: "logo")
+            return ActivityDataModel(color: Color.yellow, name: "Food&Drinks", iconPath: "logo")
         case .wine:
-            return ActivityDataModel(color: Color.pink, name: "Activities", iconPath: "logo")
+            return ActivityDataModel(color: Color.pink, name: "Wine", iconPath: "logo")
         }
     }
 }
