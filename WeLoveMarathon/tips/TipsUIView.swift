@@ -32,6 +32,6 @@ struct TipsUIView: View {
 
 struct TipsUIView_Previews: PreviewProvider {
     static var previews: some View {
-        TipsUIView(viewModel: TipsViewModel(getTipsInteractor: GetTipsInteractorImpl(repository: TipsRepositoryProtocolImpl(service: TipsServiceImpl()))))
+        TipsUIView(viewModel: TipsViewModel(getTipsInteractor: GetTipsInteractorImpl(repository: TipsRepositoryProtocolImpl(service: TipsServiceImpl(), local: TipsLocalData()))))
     }
 }

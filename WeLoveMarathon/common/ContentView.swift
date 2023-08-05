@@ -21,7 +21,7 @@ struct ContentView: View {
                         .tabItem {Label("house", systemImage: "house")}
                         .tag(Tab.house)
                     
-                    TipsUIView(viewModel: TipsViewModel(getTipsInteractor: GetTipsInteractorImpl(repository: TipsRepositoryProtocolImpl(service: TipsServiceImpl()))))
+                    TipsUIView(viewModel: TipsViewModel(getTipsInteractor: GetTipsInteractorImpl(repository: TipsRepositoryProtocolImpl(service: TipsServiceImpl(), local: TipsLocalData()))))
                         .tabItem {Label("tips", systemImage: "house")}
                         .tag(Tab.message)
                 }
