@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>349233306566-9gpguohv3q54qclp34m7h9n9hu32ng82.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.349233306566-9gpguohv3q54qclp34m7h9n9hu32ng82</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>349233306566-801qcf18i2cii0hut2ubjqcl7cjloon5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVItYSIngrtGOhe9z3GBCns2IeJFTj0TE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>349233306566</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jdagnogo.WeLoveMarathon</string>
+	<key>PROJECT_ID</key>
+	<string>welovemarathon-71ff6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>welovemarathon-71ff6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:349233306566:ios:8efcc1dd516c60593230c7</string>
+</dict>
+</plist>
