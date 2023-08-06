@@ -20,13 +20,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct WeLoveMarathonApp: App {
-    let persistenceController = PersistenceController.shared
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

@@ -16,17 +16,20 @@ protocol TipsRepositoryProtocol {
 public final class TipsRepositoryProtocolImpl: TipsRepositoryProtocol {
     private var service: TipsService
     private var local: TipsLocalData
+    private var dataFreshnessRepository: DataFreshnessRepository
     
-    init(service: TipsService, local: TipsLocalData) {
+    init(service: TipsService, local: TipsLocalData, dataFreshnessRepository: DataFreshnessRepository) {
         self.service = service
         self.local = local
+        self.dataFreshnessRepository = dataFreshnessRepository
     }
     
     func getTips() -> AnyPublisher<[Tips], Error> {
         return Future<[Tips], Error> { promise in
             var cancellables: Set<AnyCancellable> = []
-            let isDataFresh = true
+            let isDataFresh = self.dataFreshnessRepository.isDataFresh(.tips)
             if !isDataFresh {
+                print("fetching from firebase ...")
                 // if the data are not fresh or the user asked for a fetch => we request data from firebase
                 self.service.getTips().sink(receiveCompletion: { completion in
                     if case .failure(_) = completion {
@@ -38,11 +41,13 @@ public final class TipsRepositoryProtocolImpl: TipsRepositoryProtocol {
                 }, receiveValue: { resource in
                     // if it's a success, we save the data
                     self.local.saveTipsToCoreData(resource)
+                    self.dataFreshnessRepository.save(.tips)
                     self.local.fetchFromLocal().sink(receiveCompletion: { _ in }, receiveValue: { resource in
                         promise(.success(resource))
                     }).store(in: &cancellables)
                 }).store(in: &cancellables)
             } else {
+                print("fetching from Local ...")
                 self.local.fetchFromLocal().sink(receiveCompletion: { _ in }, receiveValue: { resource in
                     promise(.success(resource))
                 }).store(in: &cancellables)

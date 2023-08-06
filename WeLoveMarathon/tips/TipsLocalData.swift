@@ -12,8 +12,7 @@ import CoreData
 class TipsLocalData{
     func saveTipsToCoreData(_ tips: [Tips]) {
         let context = CoreDataManager.shared.viewContext
-        
-        // Assuming your Core Data entity is named "TipsEntity"
+    
         tips.forEach{data -> Void in
             let tipsEntity = TipsEntity(context: context)
             tipsEntity.id = data.id

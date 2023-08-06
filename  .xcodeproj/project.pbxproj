@@ -29,12 +29,12 @@
 		5711E26F2A7E6ACD00F8007A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E26E2A7E6ACD00F8007A /* CoreDataManager.swift */; };
 		5711E2742A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */; };
 		5711E2782A7E6D7A00F8007A /* TipsLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */; };
+		5711E27A2A7E86ED00F8007A /* DataFreshnessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */; };
+		5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E27B2A7E8AF500F8007A /* DataFreshnessType.swift */; };
 		5784A7F42A5C324C00E8B0F6 /* WeLoveMarathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */; };
 		5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7F52A5C324C00E8B0F6 /* ContentView.swift */; };
 		5784A7F82A5C324D00E8B0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5784A7F72A5C324D00E8B0F6 /* Assets.xcassets */; };
 		5784A7FB2A5C324D00E8B0F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5784A7FA2A5C324D00E8B0F6 /* Preview Assets.xcassets */; };
-		5784A7FD2A5C324D00E8B0F6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7FC2A5C324D00E8B0F6 /* Persistence.swift */; };
-		5784A8002A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7FE2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld */; };
 		5784A80A2A5C324D00E8B0F6 /* WeLoveMarathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8092A5C324D00E8B0F6 /* WeLoveMarathonTests.swift */; };
 		5784A8142A5C324D00E8B0F6 /* WeLoveMarathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8132A5C324D00E8B0F6 /* WeLoveMarathonUITests.swift */; };
 		5784A8162A5C324D00E8B0F6 /* WeLoveMarathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A8152A5C324D00E8B0F6 /* WeLoveMarathonUITestsLaunchTests.swift */; };
@@ -79,13 +79,13 @@
 		5711E26E2A7E6ACD00F8007A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		5711E2732A7E6CAB00F8007A /* TipsCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TipsCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsLocalData.swift; sourceTree = "<group>"; };
+		5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFreshnessRepository.swift; sourceTree = "<group>"; };
+		5711E27B2A7E8AF500F8007A /* DataFreshnessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFreshnessType.swift; sourceTree = "<group>"; };
 		5784A7F02A5C324C00E8B0F6 /* WeLoveMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLoveMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveMarathonApp.swift; sourceTree = "<group>"; };
 		5784A7F52A5C324C00E8B0F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5784A7F72A5C324D00E8B0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5784A7FA2A5C324D00E8B0F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5784A7FC2A5C324D00E8B0F6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		5784A7FF2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeLoveMarathon.xcdatamodel; sourceTree = "<group>"; };
 		5784A8052A5C324D00E8B0F6 /* WeLoveMarathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeLoveMarathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784A8092A5C324D00E8B0F6 /* WeLoveMarathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveMarathonTests.swift; sourceTree = "<group>"; };
 		5784A80F2A5C324D00E8B0F6 /* WeLoveMarathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeLoveMarathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +142,8 @@
 			children = (
 				5711E2642A7E3C8900F8007A /* ApiService.swift */,
 				5711E26E2A7E6ACD00F8007A /* CoreDataManager.swift */,
+				5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */,
+				5711E27B2A7E8AF500F8007A /* DataFreshnessType.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -177,9 +179,6 @@
 				5784A8222A5C341600E8B0F6 /* common */,
 				5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */,
 				5784A7F72A5C324D00E8B0F6 /* Assets.xcassets */,
-				5784A7FC2A5C324D00E8B0F6 /* Persistence.swift */,
-				5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */,
-				5784A7FE2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld */,
 				5784A7F92A5C324D00E8B0F6 /* Preview Content */,
 			);
 			path = WeLoveMarathon;
@@ -214,6 +213,7 @@
 		5784A8222A5C341600E8B0F6 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */,
 				5711E2632A7E3C5C00F8007A /* data */,
 				578854992A6678B7002F51F7 /* views */,
 				5784A7F52A5C324C00E8B0F6 /* ContentView.swift */,
@@ -429,10 +429,11 @@
 				5711E2472A7E341300F8007A /* TipsViewModel.swift in Sources */,
 				57B088C82A67BA8B00404861 /* Activity.swift in Sources */,
 				5711E2652A7E3C8900F8007A /* ApiService.swift in Sources */,
-				5784A7FD2A5C324D00E8B0F6 /* Persistence.swift in Sources */,
 				578854982A66714F002F51F7 /* HomeUIView.swift in Sources */,
 				5711E2692A7E3DCC00F8007A /* TipsService.swift in Sources */,
 				5711E26B2A7E4C0700F8007A /* Result.swift in Sources */,
+				5711E27A2A7E86ED00F8007A /* DataFreshnessRepository.swift in Sources */,
+				5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */,
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,
 				57B088C62A67B61700404861 /* ActivityUIView.swift in Sources */,
@@ -448,7 +449,6 @@
 				5711E2622A7E3A9400F8007A /* GetTipsInteractor.swift in Sources */,
 				5711E26D2A7E66BF00F8007A /* SingleSouceOfTruthStrategy.swift in Sources */,
 				5711E2672A7E3C9F00F8007A /* TipsRepository.swift in Sources */,
-				5784A8002A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld in Sources */,
 				57CCFF102A69173100834899 /* ActivitiesUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -845,16 +845,6 @@
 			);
 			currentVersion = 5711E2732A7E6CAB00F8007A /* TipsCoreDataModel.xcdatamodel */;
 			path = CoreDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		5784A7FE2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5784A7FF2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodel */,
-			);
-			currentVersion = 5784A7FF2A5C324D00E8B0F6 /* WeLoveMarathon.xcdatamodel */;
-			path = WeLoveMarathon.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
