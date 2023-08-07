@@ -35,11 +35,14 @@ public class DataFreshnessRepositoryImpl : DataFreshnessRepository{
         do {
             let fetchedEntities = try context.fetch(fetchRequest)
             if let loadedType = fetchedEntities.first {
+                print("dataa: \(loadedType.updateTime)")
+                print("time: \(Date().timeIntervalSince1970)")
                 return loadedType.updateTime > Date().timeIntervalSince1970
             }
         } catch {
             print("Error fetching from Core Data: \(error)")
         }
+
         return false
     }
 }

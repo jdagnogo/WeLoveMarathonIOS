@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Tips : Codable, Identifiable {
+struct Tips : Codable, Identifiable, Hashable {
     let id: String
     let title: String
     var description: String
     let ordinal: Int
     let icon: String
     let color: String
-
+    
     init(
         id: String = "",
         title: String = "",

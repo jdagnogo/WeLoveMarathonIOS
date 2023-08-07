@@ -1,16 +1,12 @@
 //
-//  TipsRepository.swift
+//  TipsRepositoryImpl.swift
 //  WeLoveMarathon
 //
-//  Created by Jean francois dagnogo on 05/08/2023.
+//  Created by Jean francois dagnogo on 07/08/2023.
 //
 
 import Foundation
 import Combine
-
-protocol TipsRepositoryProtocol {
-    func getTips() -> AnyPublisher<[Tips], Error>
-}
 
 
 public final class TipsRepositoryProtocolImpl: TipsRepositoryProtocol {
@@ -55,4 +51,3 @@ public final class TipsRepositoryProtocolImpl: TipsRepositoryProtocol {
         }.eraseToAnyPublisher()
     }
 }
-

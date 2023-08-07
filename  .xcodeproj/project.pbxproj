@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570D6A312A80D28F00BCBBC9 /* TipsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D6A302A80D28F00BCBBC9 /* TipsRepositoryImpl.swift */; };
+		570D6A342A80D37900BCBBC9 /* TipsUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */; };
 		5711E2472A7E341300F8007A /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2462A7E341300F8007A /* TipsViewModel.swift */; };
 		5711E2492A7E34A300F8007A /* TipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2482A7E34A300F8007A /* TipsModel.swift */; };
 		5711E24B2A7E36A600F8007A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5711E24A2A7E36A600F8007A /* GoogleService-Info.plist */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570D6A302A80D28F00BCBBC9 /* TipsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRepositoryImpl.swift; sourceTree = "<group>"; };
+		570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUIItem.swift; sourceTree = "<group>"; };
 		5711E2462A7E341300F8007A /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
 		5711E2482A7E34A300F8007A /* TipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsModel.swift; sourceTree = "<group>"; };
 		5711E24A2A7E36A600F8007A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,6 +141,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570D6A2D2A80D24200BCBBC9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */,
+				5711E2682A7E3DCC00F8007A /* TipsService.swift */,
+				570D6A302A80D28F00BCBBC9 /* TipsRepositoryImpl.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		570D6A2E2A80D24900BCBBC9 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				5711E2662A7E3C9F00F8007A /* TipsRepository.swift */,
+				5711E2612A7E3A9400F8007A /* GetTipsInteractor.swift */,
+				5711E2482A7E34A300F8007A /* TipsModel.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		570D6A2F2A80D24E00BCBBC9 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5711E2462A7E341300F8007A /* TipsViewModel.swift */,
+				57CCFF122A69178000834899 /* TipsUIView.swift */,
+				570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		570D6A322A80D2EF00BCBBC9 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 		5711E2632A7E3C5C00F8007A /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +254,7 @@
 		5784A8222A5C341600E8B0F6 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				570D6A322A80D2EF00BCBBC9 /* domain */,
 				5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */,
 				5711E2632A7E3C5C00F8007A /* data */,
 				578854992A6678B7002F51F7 /* views */,
@@ -269,13 +311,9 @@
 		57CCFF112A69174E00834899 /* tips */ = {
 			isa = PBXGroup;
 			children = (
-				57CCFF122A69178000834899 /* TipsUIView.swift */,
-				5711E2462A7E341300F8007A /* TipsViewModel.swift */,
-				5711E2482A7E34A300F8007A /* TipsModel.swift */,
-				5711E2612A7E3A9400F8007A /* GetTipsInteractor.swift */,
-				5711E2662A7E3C9F00F8007A /* TipsRepository.swift */,
-				5711E2682A7E3DCC00F8007A /* TipsService.swift */,
-				5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */,
+				570D6A2F2A80D24E00BCBBC9 /* presentation */,
+				570D6A2E2A80D24900BCBBC9 /* domain */,
+				570D6A2D2A80D24200BCBBC9 /* data */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -428,11 +466,13 @@
 			files = (
 				5711E2472A7E341300F8007A /* TipsViewModel.swift in Sources */,
 				57B088C82A67BA8B00404861 /* Activity.swift in Sources */,
+				570D6A342A80D37900BCBBC9 /* TipsUIItem.swift in Sources */,
 				5711E2652A7E3C8900F8007A /* ApiService.swift in Sources */,
 				578854982A66714F002F51F7 /* HomeUIView.swift in Sources */,
 				5711E2692A7E3DCC00F8007A /* TipsService.swift in Sources */,
 				5711E26B2A7E4C0700F8007A /* Result.swift in Sources */,
 				5711E27A2A7E86ED00F8007A /* DataFreshnessRepository.swift in Sources */,
+				570D6A312A80D28F00BCBBC9 /* TipsRepositoryImpl.swift in Sources */,
 				5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */,
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,

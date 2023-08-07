@@ -6,7 +6,7 @@
 //
 import Foundation
 
-let EXPIRATION_IN_MINUTES = 1
+let EXPIRATION_IN_MINUTES = 10
 
 enum DataFreshnessType {
     case about
