@@ -29,7 +29,7 @@ struct HomeUIView: View {
                         }.padding()
                     }
                 }
-            }.background(Color("Primary")).navigationTitle("We Love MArathon")
+            }.background(Color("Primary")).navigationTitle("We Love Marathon")
         }
         .navigationDestination(for: Activity.self) { activity in
             switch activity {

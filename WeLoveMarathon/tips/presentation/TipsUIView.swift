@@ -37,7 +37,7 @@ struct TipsUIView: View {
                             }.padding()
                         }
                     }
-                }.background(Color("Primary")).navigationTitle("We Love MArathon")
+                }.background(Color("Primary")).navigationTitle("Tips")
                     .sheet(isPresented: Binding(
                         get: { showSheet },
                         set: { showSheet = $0 }
@@ -49,7 +49,7 @@ struct TipsUIView: View {
             }
             
         default:
-            Text("Loading")
+            ProgressView()
         }
         
     }

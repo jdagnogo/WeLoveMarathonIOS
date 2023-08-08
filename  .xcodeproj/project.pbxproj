@@ -178,9 +178,19 @@
 			path = domain;
 			sourceTree = "<group>";
 		};
+		570D6A352A80DBF000BCBBC9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5711E26C2A7E66BF00F8007A /* SingleSouceOfTruthStrategy.swift */,
+				5711E26A2A7E4C0700F8007A /* Result.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		5711E2632A7E3C5C00F8007A /* data */ = {
 			isa = PBXGroup;
 			children = (
+				5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */,
 				5711E2642A7E3C8900F8007A /* ApiService.swift */,
 				5711E26E2A7E6ACD00F8007A /* CoreDataManager.swift */,
 				5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */,
@@ -254,14 +264,10 @@
 		5784A8222A5C341600E8B0F6 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				570D6A352A80DBF000BCBBC9 /* utils */,
 				570D6A322A80D2EF00BCBBC9 /* domain */,
-				5711E2722A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld */,
 				5711E2632A7E3C5C00F8007A /* data */,
 				578854992A6678B7002F51F7 /* views */,
-				5784A7F52A5C324C00E8B0F6 /* ContentView.swift */,
-				578854952A666950002F51F7 /* WLMTabView.swift */,
-				5711E26A2A7E4C0700F8007A /* Result.swift */,
-				5711E26C2A7E66BF00F8007A /* SingleSouceOfTruthStrategy.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -286,6 +292,8 @@
 		578854992A6678B7002F51F7 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				5784A7F52A5C324C00E8B0F6 /* ContentView.swift */,
+				578854952A666950002F51F7 /* WLMTabView.swift */,
 				5788549A2A6678CF002F51F7 /* RoundCornerView.swift */,
 				57B088C52A67B61700404861 /* ActivityUIView.swift */,
 			);

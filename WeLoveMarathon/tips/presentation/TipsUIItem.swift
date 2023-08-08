@@ -14,19 +14,14 @@ struct TipsUIItem: View {
     var onClick : () -> ()
     var body: some View {
         VStack(alignment: .center) {
-            Image(iconPath)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 70, height: 70)
-                .foregroundColor(.white)
+            AsyncImage(url: URL(string: iconPath),scale: 5).frame(width: 30, height: 30)
+                .foregroundColor(.white).padding(16)
             
-            Text(name)
-                .padding(.top, 6)
-                .foregroundColor(.white)
+            Text(name).foregroundColor(.white)
         }.onTapGesture {
             self.onClick()
         }
-        .padding(10)
+        .padding(.vertical, 16)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 16))

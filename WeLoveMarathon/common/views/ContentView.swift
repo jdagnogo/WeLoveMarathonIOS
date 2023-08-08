@@ -13,6 +13,12 @@ struct ContentView: View {
     
     init() {
         UITabBar.appearance().isHidden = true
+        //Use this if NavigationBarTitle is with Large Font
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        //Use this if NavigationBarTitle is with displayMode = .inline
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+
     }
     var body: some View {
             VStack {
