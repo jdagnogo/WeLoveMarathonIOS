@@ -43,7 +43,7 @@ struct TipsUIView: View {
                         set: { showSheet = $0 }
                     )) {
                         if let title = tipSelected?.title {
-                            Text(title)
+                            TipsModelUiView(title: title, description: tipSelected?.description ?? "")
                         }
                     }
             }

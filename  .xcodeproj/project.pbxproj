@@ -46,6 +46,7 @@
 		5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788549A2A6678CF002F51F7 /* RoundCornerView.swift */; };
 		57B088C62A67B61700404861 /* ActivityUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B088C52A67B61700404861 /* ActivityUIView.swift */; };
 		57B088C82A67BA8B00404861 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B088C72A67BA8B00404861 /* Activity.swift */; };
+		57BF04952A8272590003A04F /* TipsSheetUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF04942A8272590003A04F /* TipsSheetUiView.swift */; };
 		57CCFF0D2A690ADE00834899 /* ShoppingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCFF0C2A690ADE00834899 /* ShoppingUIView.swift */; };
 		57CCFF102A69173100834899 /* ActivitiesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCFF0F2A69173100834899 /* ActivitiesUIView.swift */; };
 		57CCFF132A69178000834899 /* TipsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CCFF122A69178000834899 /* TipsUIView.swift */; };
@@ -101,6 +102,7 @@
 		5788549A2A6678CF002F51F7 /* RoundCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerView.swift; sourceTree = "<group>"; };
 		57B088C52A67B61700404861 /* ActivityUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityUIView.swift; sourceTree = "<group>"; };
 		57B088C72A67BA8B00404861 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		57BF04942A8272590003A04F /* TipsSheetUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsSheetUiView.swift; sourceTree = "<group>"; };
 		57CCFF0C2A690ADE00834899 /* ShoppingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingUIView.swift; sourceTree = "<group>"; };
 		57CCFF0F2A69173100834899 /* ActivitiesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesUIView.swift; sourceTree = "<group>"; };
 		57CCFF122A69178000834899 /* TipsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUIView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				5711E2462A7E341300F8007A /* TipsViewModel.swift */,
 				57CCFF122A69178000834899 /* TipsUIView.swift */,
 				570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */,
+				57BF04942A8272590003A04F /* TipsSheetUiView.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */,
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,
+				57BF04952A8272590003A04F /* TipsSheetUiView.swift in Sources */,
 				57B088C62A67B61700404861 /* ActivityUIView.swift in Sources */,
 				5711E2742A7E6CAB00F8007A /* CoreDataModel.xcdatamodeld in Sources */,
 				5711E26F2A7E6ACD00F8007A /* CoreDataManager.swift in Sources */,
