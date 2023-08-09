@@ -32,6 +32,8 @@ struct ContentView: View {
                         .tag(Tab.message)
                     
                     FavsUiView(onNavigateToHome: {tabSelected = .house}).tag(Tab.person)
+                    
+                    RunUIView().tag(Tab.leaf)
                 }
                 WLMTabView(selectedTab: $tabSelected)
             }.background(Color("Primary"))

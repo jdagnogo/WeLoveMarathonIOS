@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5701C62C2A82B56100EEBBB9 /* FavsUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701C62B2A82B56100EEBBB9 /* FavsUiView.swift */; };
 		5701C62E2A836F4500EEBBB9 /* EmptyFavsUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701C62D2A836F4500EEBBB9 /* EmptyFavsUiView.swift */; };
+		5701C6312A8373C500EEBBB9 /* RunUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701C6302A8373C500EEBBB9 /* RunUIView.swift */; };
 		570D6A312A80D28F00BCBBC9 /* TipsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D6A302A80D28F00BCBBC9 /* TipsRepositoryImpl.swift */; };
 		570D6A342A80D37900BCBBC9 /* TipsUIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */; };
 		5711E2472A7E341300F8007A /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2462A7E341300F8007A /* TipsViewModel.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		5701C62B2A82B56100EEBBB9 /* FavsUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsUiView.swift; sourceTree = "<group>"; };
 		5701C62D2A836F4500EEBBB9 /* EmptyFavsUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFavsUiView.swift; sourceTree = "<group>"; };
+		5701C6302A8373C500EEBBB9 /* RunUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunUIView.swift; sourceTree = "<group>"; };
 		570D6A302A80D28F00BCBBC9 /* TipsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRepositoryImpl.swift; sourceTree = "<group>"; };
 		570D6A332A80D37800BCBBC9 /* TipsUIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUIItem.swift; sourceTree = "<group>"; };
 		5711E2462A7E341300F8007A /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
@@ -180,6 +182,14 @@
 			path = presentation;
 			sourceTree = "<group>";
 		};
+		5701C62F2A8373B900EEBBB9 /* run */ = {
+			isa = PBXGroup;
+			children = (
+				5701C6302A8373C500EEBBB9 /* RunUIView.swift */,
+			);
+			path = run;
+			sourceTree = "<group>";
+		};
 		570D6A2D2A80D24200BCBBC9 /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +272,7 @@
 		5784A7F22A5C324C00E8B0F6 /* WeLoveMarathon */ = {
 			isa = PBXGroup;
 			children = (
+				5701C62F2A8373B900EEBBB9 /* run */,
 				5701C6272A82B53100EEBBB9 /* favs */,
 				57CCFF112A69174E00834899 /* tips */,
 				57CCFF0E2A69171800834899 /* activities */,
@@ -533,6 +544,7 @@
 				5711E26F2A7E6ACD00F8007A /* CoreDataManager.swift in Sources */,
 				57CCFF0D2A690ADE00834899 /* ShoppingUIView.swift in Sources */,
 				5711E2492A7E34A300F8007A /* TipsModel.swift in Sources */,
+				5701C6312A8373C500EEBBB9 /* RunUIView.swift in Sources */,
 				5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */,
 				57CCFF132A69178000834899 /* TipsUIView.swift in Sources */,
 				5711E2782A7E6D7A00F8007A /* TipsLocalData.swift in Sources */,
