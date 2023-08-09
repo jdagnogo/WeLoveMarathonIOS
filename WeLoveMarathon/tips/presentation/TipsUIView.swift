@@ -21,21 +21,20 @@ struct TipsUIView: View {
             NavigationStack {
                 ScrollView {
                     ScrollView(.vertical) {
-                        ScrollView(.vertical) {
-                            let columns = Array(repeating: GridItem(.flexible(minimum: 100), spacing: 20), count: 2)
-                            LazyVGrid(
-                                columns: columns,
-                                alignment: .center,
-                                spacing: 16
-                            ) {
-                                ForEach(tips, id: \.self) { tip in
-                                    TipsUIItem(color: tip.color, iconPath: tip.icon, name: tip.title,onClick: {
-                                        tipSelected = tip
-                                        showSheet = true
-                                    })
-                                }
-                            }.padding()
-                        }
+                        let columns = Array(repeating: GridItem(.flexible(minimum: 100), spacing: 20), count: 2)
+                        LazyVGrid(
+                            columns: columns,
+                            alignment: .center,
+                            spacing: 16
+                        ) {
+                            ForEach(tips, id: \.self) { tip in
+                                TipsUIItem(color: tip.color, iconPath: tip.icon, name: tip.title,onClick: {
+                                    tipSelected = tip
+                                    showSheet = true
+                                })
+                            }
+                        }.padding()
+                        
                     }
                 }.background(Color("Primary")).navigationTitle("Tips")
                     .sheet(isPresented: Binding(

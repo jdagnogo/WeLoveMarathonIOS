@@ -18,7 +18,7 @@ enum Tab: String, CaseIterable {
         switch self {
         case .house: return  "Home"
         case .message: return  "Tips"
-        case .person: return  "Like"
+        case .person: return  "Favs"
         case .leaf: return  "Run"
         case .gearshape: return  "About"
         }
