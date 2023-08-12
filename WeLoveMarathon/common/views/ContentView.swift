@@ -34,6 +34,8 @@ struct ContentView: View {
                     FavsUiView(onNavigateToHome: {tabSelected = .house}).tag(Tab.person)
                     
                     RunUIView().tag(Tab.leaf)
+                    
+                    AboutUIView(viewModel: AboutViewModel(getAboutInteractor: GetAboutInteractorImpl(repository: AboutRepositoryProtocolImpl(service: AboutServiceImpl(), local: AboutLocalData(), dataFreshnessRepository: DataFreshnessRepositoryImpl())))).tag(Tab.gearshape)
                 }
                 WLMTabView(selectedTab: $tabSelected)
             }.background(Color("Primary"))

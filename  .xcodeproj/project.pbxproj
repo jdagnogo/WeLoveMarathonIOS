@@ -36,6 +36,16 @@
 		5711E2782A7E6D7A00F8007A /* TipsLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */; };
 		5711E27A2A7E86ED00F8007A /* DataFreshnessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */; };
 		5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711E27B2A7E8AF500F8007A /* DataFreshnessType.swift */; };
+		5750F97E2A8766DF00B50B8C /* AboutUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F97D2A8766DF00B50B8C /* AboutUIView.swift */; };
+		5750F9802A87677E00B50B8C /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F97F2A87677E00B50B8C /* AboutViewModel.swift */; };
+		5750F9862A87680100B50B8C /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9852A87680100B50B8C /* MemberModel.swift */; };
+		5750F9882A8768BE00B50B8C /* SocialMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9872A8768BE00B50B8C /* SocialMediaModel.swift */; };
+		5750F98A2A8768F700B50B8C /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9892A8768F700B50B8C /* AboutModel.swift */; };
+		5750F98C2A876A8200B50B8C /* AboutLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F98B2A876A8200B50B8C /* AboutLocalData.swift */; };
+		5750F9922A87790C00B50B8C /* AboutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9912A87790C00B50B8C /* AboutService.swift */; };
+		5750F9942A8779B000B50B8C /* GetAboutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9932A8779B000B50B8C /* GetAboutUseCase.swift */; };
+		5750F9962A8779BE00B50B8C /* AboutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9952A8779BE00B50B8C /* AboutRepository.swift */; };
+		5750F9982A877A6D00B50B8C /* AboutRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750F9972A877A6D00B50B8C /* AboutRepositoryImpl.swift */; };
 		5784A7F42A5C324C00E8B0F6 /* WeLoveMarathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */; };
 		5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5784A7F52A5C324C00E8B0F6 /* ContentView.swift */; };
 		5784A7F82A5C324D00E8B0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5784A7F72A5C324D00E8B0F6 /* Assets.xcassets */; };
@@ -92,6 +102,16 @@
 		5711E2772A7E6D7A00F8007A /* TipsLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsLocalData.swift; sourceTree = "<group>"; };
 		5711E2792A7E86ED00F8007A /* DataFreshnessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFreshnessRepository.swift; sourceTree = "<group>"; };
 		5711E27B2A7E8AF500F8007A /* DataFreshnessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFreshnessType.swift; sourceTree = "<group>"; };
+		5750F97D2A8766DF00B50B8C /* AboutUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUIView.swift; sourceTree = "<group>"; };
+		5750F97F2A87677E00B50B8C /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		5750F9852A87680100B50B8C /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
+		5750F9872A8768BE00B50B8C /* SocialMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaModel.swift; sourceTree = "<group>"; };
+		5750F9892A8768F700B50B8C /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		5750F98B2A876A8200B50B8C /* AboutLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLocalData.swift; sourceTree = "<group>"; };
+		5750F9912A87790C00B50B8C /* AboutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutService.swift; sourceTree = "<group>"; };
+		5750F9932A8779B000B50B8C /* GetAboutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAboutUseCase.swift; sourceTree = "<group>"; };
+		5750F9952A8779BE00B50B8C /* AboutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRepository.swift; sourceTree = "<group>"; };
+		5750F9972A877A6D00B50B8C /* AboutRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRepositoryImpl.swift; sourceTree = "<group>"; };
 		5784A7F02A5C324C00E8B0F6 /* WeLoveMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLoveMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5784A7F32A5C324C00E8B0F6 /* WeLoveMarathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLoveMarathonApp.swift; sourceTree = "<group>"; };
 		5784A7F52A5C324C00E8B0F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -249,6 +269,47 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		5750F97A2A8766B100B50B8C /* about */ = {
+			isa = PBXGroup;
+			children = (
+				5750F9832A8767BE00B50B8C /* data */,
+				5750F9822A8767B900B50B8C /* domain */,
+				5750F9812A8767B200B50B8C /* presentation */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		5750F9812A8767B200B50B8C /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5750F97F2A87677E00B50B8C /* AboutViewModel.swift */,
+				5750F97D2A8766DF00B50B8C /* AboutUIView.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		5750F9822A8767B900B50B8C /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				5750F9852A87680100B50B8C /* MemberModel.swift */,
+				5750F9872A8768BE00B50B8C /* SocialMediaModel.swift */,
+				5750F9892A8768F700B50B8C /* AboutModel.swift */,
+				5750F9932A8779B000B50B8C /* GetAboutUseCase.swift */,
+				5750F9952A8779BE00B50B8C /* AboutRepository.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		5750F9832A8767BE00B50B8C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5750F98B2A876A8200B50B8C /* AboutLocalData.swift */,
+				5750F9912A87790C00B50B8C /* AboutService.swift */,
+				5750F9972A877A6D00B50B8C /* AboutRepositoryImpl.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		5784A7E72A5C324C00E8B0F6 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +333,7 @@
 		5784A7F22A5C324C00E8B0F6 /* WeLoveMarathon */ = {
 			isa = PBXGroup;
 			children = (
+				5750F97A2A8766B100B50B8C /* about */,
 				5701C62F2A8373B900EEBBB9 /* run */,
 				5701C6272A82B53100EEBBB9 /* favs */,
 				57CCFF112A69174E00834899 /* tips */,
@@ -528,12 +590,15 @@
 				57B088C82A67BA8B00404861 /* Activity.swift in Sources */,
 				570D6A342A80D37900BCBBC9 /* TipsUIItem.swift in Sources */,
 				5711E2652A7E3C8900F8007A /* ApiService.swift in Sources */,
+				5750F9942A8779B000B50B8C /* GetAboutUseCase.swift in Sources */,
 				5701C62C2A82B56100EEBBB9 /* FavsUiView.swift in Sources */,
 				578854982A66714F002F51F7 /* HomeUIView.swift in Sources */,
+				5750F9922A87790C00B50B8C /* AboutService.swift in Sources */,
 				5711E2692A7E3DCC00F8007A /* TipsService.swift in Sources */,
 				5711E26B2A7E4C0700F8007A /* Result.swift in Sources */,
 				5711E27A2A7E86ED00F8007A /* DataFreshnessRepository.swift in Sources */,
 				570D6A312A80D28F00BCBBC9 /* TipsRepositoryImpl.swift in Sources */,
+				5750F9862A87680100B50B8C /* MemberModel.swift in Sources */,
 				5711E27C2A7E8AF500F8007A /* DataFreshnessType.swift in Sources */,
 				5784A7F62A5C324C00E8B0F6 /* ContentView.swift in Sources */,
 				5784A8252A5C344D00E8B0F6 /* SplashScreenView.swift in Sources */,
@@ -543,15 +608,22 @@
 				5701C62E2A836F4500EEBBB9 /* EmptyFavsUiView.swift in Sources */,
 				5711E26F2A7E6ACD00F8007A /* CoreDataManager.swift in Sources */,
 				57CCFF0D2A690ADE00834899 /* ShoppingUIView.swift in Sources */,
+				5750F97E2A8766DF00B50B8C /* AboutUIView.swift in Sources */,
 				5711E2492A7E34A300F8007A /* TipsModel.swift in Sources */,
 				5701C6312A8373C500EEBBB9 /* RunUIView.swift in Sources */,
+				5750F98C2A876A8200B50B8C /* AboutLocalData.swift in Sources */,
+				5750F9802A87677E00B50B8C /* AboutViewModel.swift in Sources */,
 				5788549B2A6678CF002F51F7 /* RoundCornerView.swift in Sources */,
 				57CCFF132A69178000834899 /* TipsUIView.swift in Sources */,
 				5711E2782A7E6D7A00F8007A /* TipsLocalData.swift in Sources */,
 				578854962A666950002F51F7 /* WLMTabView.swift in Sources */,
+				5750F98A2A8768F700B50B8C /* AboutModel.swift in Sources */,
 				5784A7F42A5C324C00E8B0F6 /* WeLoveMarathonApp.swift in Sources */,
+				5750F9982A877A6D00B50B8C /* AboutRepositoryImpl.swift in Sources */,
 				5711E2622A7E3A9400F8007A /* GetTipsInteractor.swift in Sources */,
 				5711E26D2A7E66BF00F8007A /* SingleSouceOfTruthStrategy.swift in Sources */,
+				5750F9882A8768BE00B50B8C /* SocialMediaModel.swift in Sources */,
+				5750F9962A8779BE00B50B8C /* AboutRepository.swift in Sources */,
 				5711E2672A7E3C9F00F8007A /* TipsRepository.swift in Sources */,
 				57CCFF102A69173100834899 /* ActivitiesUIView.swift in Sources */,
 			);
