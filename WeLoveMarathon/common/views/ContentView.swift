@@ -29,9 +29,9 @@ struct ContentView: View {
                     
                     TipsUIView(viewModel: TipsViewModel(getTipsInteractor: GetTipsInteractorImpl(repository: TipsRepositoryProtocolImpl(service: TipsServiceImpl(), local: TipsLocalData(), dataFreshnessRepository: DataFreshnessRepositoryImpl()))))
                         .tabItem {Label("tips", systemImage: "house")}
-                        .tag(Tab.message)
+                        .tag(Tab.info)
                     
-                    FavsUiView(onNavigateToHome: {tabSelected = .house}).tag(Tab.person)
+                    FavsUiView(onNavigateToHome: {tabSelected = .house}).tag(Tab.heart)
                     
                     RunUIView().tag(Tab.leaf)
                     

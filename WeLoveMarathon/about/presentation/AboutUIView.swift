@@ -16,14 +16,25 @@ struct AboutUIView: View {
         case .idle :
             Color.clear.onAppear(perform: viewModel.loadData)
         case .success(let abouts):
-            VStack{
-                ForEach(abouts, id: \.self) { about in
-                    Text(about.mail)
-                    ForEach(about.members, id: \.self) { member in    Text(member.name)
-                    }
-        
+            ScrollView {
+                ScrollView(.vertical) {
+                    VStack{
+                        ForEach(abouts, id: \.self) { about in
+                            Text(about.mail)
+                            let columns = Array(repeating: GridItem(.flexible(minimum: 35)), count: 4)
+                            LazyVGrid(
+                                columns: columns,
+                                alignment: .center
+                            ) {
+                                ForEach(about.members, id: \.self) { member in
+                                    MemberUIView(member: member).padding(.bottom, 8)
+                                }
+                            }.padding()
+                            
+                        }
+                    }.padding()
                 }
-            }
+            }.frame(maxHeight: .infinity).background(Color("Primary"))
         default:
             ProgressView()
         }

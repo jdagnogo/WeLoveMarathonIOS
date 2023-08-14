@@ -9,16 +9,16 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case house
-    case message
-    case person
+    case info
+    case heart
     case leaf
     case gearshape
     
     func getName() -> String {
         switch self {
         case .house: return  "Home"
-        case .message: return  "Tips"
-        case .person: return  "Favs"
+        case .info: return  "Tips"
+        case .heart: return  "Favs"
         case .leaf: return  "Run"
         case .gearshape: return  "About"
         }

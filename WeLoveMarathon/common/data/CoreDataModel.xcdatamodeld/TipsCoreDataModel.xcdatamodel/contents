@@ -7,6 +7,11 @@
         <attribute name="policy" optional="YES" attributeType="String"/>
         <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MemberEntity" inverseName="about" inverseEntity="MemberEntity"/>
         <relationship name="socials" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SocialMediaEntity" inverseName="about" inverseEntity="SocialMediaEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="DataFreshnessEntity" representedClassName="DataFreshnessEntity" syncable="YES" codeGenerationType="class">
         <attribute name="dataName" optional="YES" attributeType="String"/>
@@ -19,6 +24,11 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="ordinal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="about" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AboutEntity" inverseName="members" inverseEntity="AboutEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="SocialMediaEntity" representedClassName="SocialMediaEntity" syncable="YES" codeGenerationType="class">
         <attribute name="icon" optional="YES" attributeType="String"/>
@@ -26,6 +36,11 @@
         <attribute name="link" optional="YES" attributeType="String"/>
         <attribute name="ordinal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="about" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AboutEntity" inverseName="socials" inverseEntity="AboutEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="TipsEntity" representedClassName="TipsEntity" syncable="YES" codeGenerationType="class">
         <attribute name="color" optional="YES" attributeType="String"/>

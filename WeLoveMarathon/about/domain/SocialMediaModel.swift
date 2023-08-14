@@ -15,11 +15,12 @@ struct SocialMediaModel : Codable, Identifiable, Hashable {
     let ordinal: Int
     
     init(
+        id: String = "",
         link: String = "",
         ordinal: Int = 0,
         icon: String = ""
     ) {
-        self.id = UUID().uuidString
+        self.id = id
         self.link = link
         self.ordinal = ordinal
         self.icon = icon
